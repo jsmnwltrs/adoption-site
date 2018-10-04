@@ -2,8 +2,7 @@ import {setPets, getPetz, petBuilder} from "../components/petComponent.js"
 
 function executeThisCodeAfterFileLoaded () {
     const data = JSON.parse(this.responseText);    
-    setPets(data.pets);   
-    // console.log(getPetz());               
+    setPets(data.pets);                
     petBuilder(getPetz());
 };
 
