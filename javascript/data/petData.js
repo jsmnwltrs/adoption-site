@@ -1,10 +1,10 @@
-import {setPets, getPetz} from "../components/petComponent.js"
+import {setPets, getPetz, petBuilder} from "../components/petComponent.js"
 
 function executeThisCodeAfterFileLoaded () {
     const data = JSON.parse(this.responseText);    
     setPets(data.pets);   
-    console.log(getPetz());               
-    // petsBuilder(getPets());
+    // console.log(getPetz());               
+    petBuilder(getPetz());
 };
 
 function executeThisCodeIfXhrFails () {
