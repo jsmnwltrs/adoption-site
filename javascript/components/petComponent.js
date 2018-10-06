@@ -20,8 +20,10 @@ const petBuilder = (petsArray) => {
             <div class="card-body">
                 <p class="card-text text-center"><strong>Color:</strong> ${petsArray[i].color}</p>
                 <p class="card-text text-center"><strong>Special Skill:</strong> ${petsArray[i].specialSkill}</p>
-                <p class="card-text text-center font-weight-bold  ${petsArray[i].type}">${petsArray[i].type.toUpperCase()}</p>
-            </div>
+                </div>
+                <div class="card-footer text-center font-weight-bold  ${petsArray[i].type}">
+                ${petsArray[i].type.toUpperCase()}
+              </div>
           </div>`;
     };
     printToDom(domString, 'pets');
