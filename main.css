@@ -1,10 +1,13 @@
 body {
-    background-color: tomato;
+    background-image: url(http://getwallpapers.com/wallpaper/full/0/5/e/993666-cute-purple-backgrounds-1920x1200-for-mac.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1 {
     display: flex;
     justify-content: center;
+    color: white;
 }
 
 .cat {
